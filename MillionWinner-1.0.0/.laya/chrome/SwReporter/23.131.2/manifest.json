@@ -1,0 +1,13 @@
+{
+  "launch_params": [
+    {
+      "allow-reporter-logs": true,
+      "arguments": [],
+      "prompt": true,
+      "suffix": "URZA"
+    }
+  ],
+  "manifest_version": 2,
+  "name": "Software Reporter Tool",
+  "version": "23.131.2"
+}
