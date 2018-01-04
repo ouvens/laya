@@ -132,7 +132,9 @@ var BaseComponent = (function(){
          * 用于定义初始化内部组件
          */
         this._componentInit = function () {
-            (this.componentInit || noop).call(this);
+            if (this.componentInit) {
+                this.componentInit.call(this);
+            }
             this._componentWillMount();
         }
 
@@ -161,7 +163,9 @@ var BaseComponent = (function(){
             }));
 
             // componentWillMount中的css设置优先级高于styles里面的
-            (this.componentWillMount || noop).call(this);
+            if (this.componentWillMount) {
+                this.componentWillMount.call(this);
+            }
             this._render(this.C, this.styles);
         }
 
@@ -182,7 +186,9 @@ var BaseComponent = (function(){
             }
 
             // render中的渲染设置优先级高于styles里面的
-            (this.render || noop).call(this);
+            if (this.render) {
+                this.render.call(this);
+            }
 
             this._componentDidMount()
         }
@@ -192,7 +198,9 @@ var BaseComponent = (function(){
          * 
          */
         this._componentDidMount = function() {
-            (this.componentDidMount || noop).call(this);
+            if (this.componentDidMount) {
+                this.componentDidMount.call(this);
+            }
             this._bindEvent();
         }
 
@@ -200,7 +208,9 @@ var BaseComponent = (function(){
          * 绑定事件
          */
         this._bindEvent = function() {
-            (this.bindEvent || noop).call(this);
+            if (this.bindEvent) {
+                this.bindEvent.call(this);
+            }
         }
 
 
@@ -271,6 +281,9 @@ var BaseComponent = (function(){
                 }
             }));
 
+            if (this.componentWillUpdate) {
+                this.componentWillUpdate.call(this);
+            }
             this._Update(self.C, nextStyles);
         }
 
@@ -294,7 +307,9 @@ var BaseComponent = (function(){
          * 
          */
         this._componentDidUpdate = function() {
-            (this.componentDidUpdate || noop).call(this);
+            if (this.componentDidUpdate) {
+                this.componentDidUpdate.call(this);
+            }
         }
 
         /**
