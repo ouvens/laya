@@ -2,29 +2,18 @@
     "x":0,
     "type":"View",
     "selectedBox":1,
-    "selecteID":1,
+    "selecteID":41,
     "referenceLines":null,
     "props":{"x":0,"width":300,"var":"SysMenuUI","height":400},
     "nodeParent":-1,
     "label":"View(SysMenuUI)",
-    "isOpen":false,
-    "isDirectory":true,
+    "isOpen":true,
+    "isDirectory":false,
     "isAniNode":true,
-    "hasChild":true,
+    "hasChild":false,
     "compId":1,
     "child":[
-        {
-            "type":"Sprite",
-            "props":{"y":-4,"x":-328},
-            "nodeParent":1,
-            "label":"Sprite",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":41,
-            "child":[
-                ]
-        }],
+        ],
     "animations":[
         {
             "nodes":[

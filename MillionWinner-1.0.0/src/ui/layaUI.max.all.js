@@ -18,6 +18,6 @@ var SysMenuUI=(function(_super){
 
 		}
 
-		SysMenuUI.uiView={"type":"View","props":{"x":0,"width":300,"height":400},"child":[{"type":"Sprite","props":{"y":-4,"x":-328}}]};
+		SysMenuUI.uiView={"type":"View","props":{"x":0,"width":300,"height":400}};
 		return SysMenuUI;
 	})(View);
